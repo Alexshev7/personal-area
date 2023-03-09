@@ -1,0 +1,190 @@
+[
+  {
+    "title": "finefloor",
+    "expanded": false,
+    "folder": true,
+    "lazy": true,
+    "children": [
+      {
+        "title": "FF Gear",
+        "folder": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          },
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      },
+      {
+        "title": "SS Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      },
+      {
+        "title": "DD Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      },
+      {
+        "title": "GG Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AMCMol",
+    "expanded": false,
+    "folder": true,
+    "lazy": true,
+    "children": [
+      {
+        "title": "CC Gear",
+        "folder": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "BBClocal",
+    "folder": true,
+    "lazy": true,
+    "children": [
+      {
+        "title": "BBA Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      },
+      {
+        "title": "BBS Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      },
+      {
+        "title": "BBL Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      },
+      {
+        "title": "BBT Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "NFCxiaomi",
+    "folder": true,
+    "lazy": true,
+    "children": [
+      {
+        "title": "FFA Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      },
+      {
+        "title": "FFS Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      },
+      {
+        "title": "FFG Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      },
+      {
+        "title": "FFT Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "KFCgood",
+    "folder": true,
+    "lazy": true,
+    "children": [
+      {
+        "title": "KKS Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      },
+      {
+        "title": "KKB Gear",
+        "folder": true,
+        "lazy": true,
+        "children": [
+          {
+            "title": "Паркетная доска Manor House II RW04385A Дуб Дерби"
+          }
+        ]
+      }
+    ]
+  }
+]
