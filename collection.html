@@ -1,6 +1,2019 @@
-<!DOCTYPE html><html lang="ru" class="page"><head><meta http-equiv="Content-Type" content="text/html" charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="theme-color" content="#111111"><title>Vkvadrate — table</title><link rel="preload" href="fonts/InterRegular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/InterSemiBold.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="css/vendor.css"><link rel="stylesheet" href="css/main.css"><script defer="defer" src="js/main.js"></script><script>var initJsonArrayObjects = [];
-    var dataTable = [];</script></head><body class="page__body"><div class="site-container"><header class="header"><div class="container-fluid header__container"><div class="logo header__logo"><h1 class="logo__title">Личный кабинет</h1></div><div class="menu header__menu"><ul class="list-reset menu__list"><li class="menu__item top-search__wrapper"><div id="topSearch" class="top-search__container"><button class="btn-reset btn__search"><svg><use xlink:href="img/sprite.svg#search"></use></svg></button><form action="https://google.com/search" class="form top-search__form" method="GET" role="search"><input type="search" class="input-reset top-search__input" id="topSearchInput" name="q" aria-label="Поиск по сайту" placeholder="Поиск" autocomplete="off"></form></div><span class="tooltip-menu"><span class="tooltip-menu__txt tooltip-menu__txt--search" role="tooltip"><span class="visually-hidden">Тултип: </span>поиск по сайту</span></span></li><li class="menu__item menu__item--active"><div class="cart-info"><svg><use xlink:href="img/sprite.svg#shopping-cart"></use></svg><div class="cart-info__descr"><div class="cart-info__top"><span class="cart-info__count">7</span><span> товаров</span></div><div class="cart-info__bottom"><span>на сумму</span><span class="cart-info__sum"> 482 573,30 ₽</span></div></div></div><span class="tooltip-menu"><span class="tooltip-menu__txt tooltip-menu__txt--cart" role="tooltip"><span class="visually-hidden">Тултип: </span>корзина</span></span></li><li class="menu__item"><svg><use xlink:href="img/sprite.svg#chat"></use></svg> <span class="tooltip-menu"><span class="tooltip-menu__txt tooltip-menu__txt--chat" role="tooltip"><span class="visually-hidden">Тултип: </span>чат</span></span></li><li class="menu__item"><svg><use xlink:href="img/sprite.svg#notification"></use></svg> <span class="tooltip-menu"><span class="tooltip-menu__txt tooltip-menu__txt--notify" role="tooltip"><span class="visually-hidden">Тултип: </span>Уведомления</span></span></li><li class="menu__item menu__item--user"><div class="user__icon"><svg><use xlink:href="img/sprite.svg#user"></use></svg></div><!-- <picture>
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Vkvadrate — table</title>
+  <link rel="preload" href="fonts/InterRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/InterSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <script>
+    var initJsonArrayObjects = [];
+    var dataTable = [];
+  </script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container-fluid header__container">
+    <div class="logo header__logo">
+      <h1 class="logo__title">Личный кабинет</h1>
+    </div>
+    <div class="menu header__menu">
+      <ul class="list-reset menu__list">
+        <li class="menu__item top-search__wrapper">
+          <div id="topSearch" class="top-search__container">
+            <button class="btn-reset btn__search">
+              <svg>
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <form action="https://google.com/search" class="form top-search__form" method="GET" role="search">
+              <input type="search" class="input-reset top-search__input" id="topSearchInput" name="q"
+                aria-label="Поиск по сайту" placeholder="Поиск" autocomplete="off">
+            </form>
+          </div>
+          <span class="tooltip-menu">
+            <span class="tooltip-menu__txt tooltip-menu__txt--search" role="tooltip">
+              <span class="visually-hidden">Тултип: </span>
+              поиск по сайту
+            </span>
+          </span>
+        </li>
+        <li class="menu__item menu__item--active">
+          <div class="cart-info">
+            <svg>
+              <use xlink:href="img/sprite.svg#shopping-cart"></use>
+            </svg>
+            <div class="cart-info__descr">
+              <div class="cart-info__top">
+                <span class="cart-info__count">7</span><span> товаров</span>
+              </div>
+              <div class="cart-info__bottom">
+                <span>на сумму</span><span class="cart-info__sum"> 482 573,30 ₽</span>
+              </div>
+            </div>
+          </div>
+          <span class="tooltip-menu">
+            <span class="tooltip-menu__txt tooltip-menu__txt--cart" role="tooltip">
+              <span class="visually-hidden">Тултип: </span>
+              корзина
+            </span>
+          </span>
+        </li>
+        <li class="menu__item">
+          <svg>
+            <use xlink:href="img/sprite.svg#chat"></use>
+          </svg>
+          <span class="tooltip-menu">
+            <span class="tooltip-menu__txt tooltip-menu__txt--chat" role="tooltip">
+              <span class="visually-hidden">Тултип: </span>
+              чат
+            </span>
+          </span>
+        </li>
+        <li class="menu__item">
+          <svg>
+            <use xlink:href="img/sprite.svg#notification"></use>
+          </svg>
+          <span class="tooltip-menu">
+            <span class="tooltip-menu__txt tooltip-menu__txt--notify" role="tooltip">
+              <span class="visually-hidden">Тултип: </span>
+              Уведомления
+            </span>
+          </span>
+        </li>
+        <li class="menu__item menu__item--user">
+          <div class="user__icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+          </div>
+          <!-- <picture>
             <source srcset="img/user-avatar.webp" type="image/webp">
             <img loading="lazy" src="img/user-avatar.png" class="user__image" width="96" height="96"
               alt="Пользовательский аватар">
-          </picture> --></li><li class="menu__item menu__item--switch"><label class="switch-theme"><input type="checkbox" class="switch-theme__input"> <span class="switch-theme__slider"></span></label></li></ul></div></div></header><main class="main"><div class="collection"><div class="container-fluid collection__container"><!-- sidebar --><div class="sidebar-wrapper" id="sidebarWrapper"><div class="sidebar"><nav class="sidebar-nav"><ul class="sidebar-nav__list list-reset"><li class="sidebar-nav__item"><a href="https://alexshev7.github.io/personal-area/" class="sidebar-nav__link"><svg><use xlink:href="img/sprite.svg#dashboard"></use></svg> <span class="sidebar-nav__title">Главная</span></a></li><li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link"><svg><use xlink:href="img/sprite.svg#star-review"></use></svg> <span class="sidebar-nav__title">Избранное</span></a></li><li class="sidebar-nav__item"><a href="https://alexshev7.github.io/personal-area/" class="sidebar-nav__link sidebar-nav__link--active"><svg><use xlink:href="img/sprite.svg#tree-view-alt"></use></svg> <span class="sidebar-nav__title">Каталог</span></a></li><li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link"><svg><use xlink:href="img/sprite.svg#shopping-cart"></use></svg> <span class="sidebar-nav__title">Заказы</span></a></li><li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link"><svg><use xlink:href="img/sprite.svg#chart-multitype"></use></svg> <span class="sidebar-nav__title">Статистика</span></a></li><li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link"><svg><use xlink:href="img/sprite.svg#group-access"></use></svg> <span class="sidebar-nav__title">Пользователи</span></a></li><li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link"><svg><use xlink:href="img/sprite.svg#share-knowledge"></use></svg> <span class="sidebar-nav__title">Партнеры</span></a></li><li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link"><svg><use xlink:href="img/sprite.svg#roadmap"></use></svg> <span class="sidebar-nav__title">Проекты</span></a></li><li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link"><svg><use xlink:href="img/sprite.svg#media-library"></use></svg> <span class="sidebar-nav__title">Обучение</span></a></li><li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link"><svg><use xlink:href="img/sprite.svg#folder-open"></use></svg> <span class="sidebar-nav__title">Материалы</span></a></li><li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link"><svg><use xlink:href="img/sprite.svg#ibm-cloud-pak-watson-aiops"></use></svg> <span class="sidebar-nav__title">Техподдержка</span></a></li><li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link sidebar-nav__link--expand"><svg class="expand-svg"><use xlink:href="img/sprite.svg#openside-bar"></use></svg> <svg class="collapse-svg"><use xlink:href="img/sprite.svg#open-panel-left"></use></svg> <span class="sidebar-nav__title sidebar-nav__title--change">Развернуть меню</span></a></li></ul></nav><div class="sidebar__bottom"><a href="#" class="sidebar__link-app"><svg><use xlink:href="img/sprite.svg#fine-app"></use></svg></a><p class="sidebar__descr">Разработка и техническая поддержка от компании ITeem. ©2023. По правам у нас все ок.</p></div></div></div><div class="collection__flex"><!-- breadcrumbs --><nav class="breadcrumb-lk"><ul class="list-reset breadcrumb-lk__list"><li class="breadcrumb-lk__item"><a href="https://alexshev7.github.io/personal-area/" class="breadcrumb-lk__link">Каталог</a></li><li class="breadcrumb-lk__item"><a href="https://alexshev7.github.io/personal-area/brand.html" class="breadcrumb-lk__link">Бренд</a></li><li class="breadcrumb-lk__item"><a href="https://alexshev7.github.io/personal-area/collection.html" class="breadcrumb-lk__link">Коллекция</a></li><li class="breadcrumb-lk__item"><a href="https://alexshev7.github.io/personal-area/decor.html" class="breadcrumb-lk__link">Декор</a></li><li class="breadcrumb-lk__item breadcrumb-lk__item--active">Декор</li></ul></nav><!-- collection main --><section class="collection-main"><div class="collection-main__container"><div class="collection-main__top"><div class="collection-main__logo"><div class="collection-main__flag"><picture><source srcset="img/flag.webp" type="image/webp"><img loading="lazy" src="img/flag.png" class="image" width="28" height="20" alt="Флаг страны бренда"></picture></div><div class="collection-main__brand">Fine Floor</div></div><div class="collection-main__row"><h3 class="collection-main__title">Коллекция Wood</h3><div class="collection-main__inf-wrap"><div class="collection-main__inf"><div class="collection-main__inf-item"><span class="collection-main__number">26</span><span class="collection-main__cur">декоров</span></div></div><div class="collection-main__inf"><div class="collection-main__inf-item"><span class="collection-main__number">87</span><span class="collection-main__cur">SKU</span></div></div></div><div class="collection-main__prices"><p class="collection-main__price">от <span>5259</span> ₽ за м²</p><p class="collection-main__text">цена за упаковку: от <span>23 239</span> ₽</p></div></div></div><div class="collection-main__bottom"><div class="collection-main__wrapper"><div class="collection-main__funs"><h5 class="collection-main__subtitle">Особенности коллекции</h5><div class="collection-main__fun"><div class="collection-main__fun-wrap"><div class="collection-main__type-wrap collection-main__type-item"><div class="collection-main__type"><svg class="collection-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="collection-craft"><use xlink:href="img/sprite.svg#zamkoviy"></use></svg></div></div><div class="collection-main__drop collection-main__type-item">click<br>drop</div><div class="collection-main__size collection-main__type-item"><div class="decor-collection__size-item"><span class="collection-tooltip"><button class="btn__collection-tooltip btn-reset"><div class="decor-collection__size-num">0,55</div></button> <span class="collection-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Толщина защитного слоя <svg><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></div><div class="decor-collection__size-item"><span class="collection-tooltip"><button class="btn__collection-tooltip btn-reset"><div class="decor-collection__size-num decor-collection__size-num--active">4,5</div></button> <span class="collection-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Толщина защитного слоя <svg><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></div></div></div><div class="collection-main__type-name">Замковый</div></div><div class="collection-main__fun"><div class="collection-main__fun-wrap"><div class="collection-main__type-wrap collection-main__type-item"><div class="collection-main__type"><svg class="collection-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="collection-craft"><use xlink:href="img/sprite.svg#kleevoy"></use></svg></div></div><div class="collection-main__size collection-main__type-item"><div class="decor-collection__size-item"><span class="collection-tooltip"><button class="btn__collection-tooltip btn-reset"><div class="decor-collection__size-num">0,55</div></button> <span class="collection-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Толщина защитного слоя <svg><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></div><div class="decor-collection__size-item"><span class="collection-tooltip"><button class="btn__collection-tooltip btn-reset"><div class="decor-collection__size-num decor-collection__size-num--active">2,5</div></button> <span class="collection-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Толщина защитного слоя <svg><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></div></div></div><div class="collection-main__type-name">Клеевой</div></div><div class="collection-main__fun"><div class="collection-main__fun-wrap"><div class="collection-main__type-wrap collection-main__type-item"><div class="collection-main__type"><svg class="collection-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="collection-craft"><use xlink:href="img/sprite.svg#free"></use></svg></div></div><div class="collection-main__size collection-main__type-item"><div class="decor-collection__size-item"><span class="collection-tooltip"><button class="btn__collection-tooltip btn-reset"><div class="decor-collection__size-num">0,55</div></button> <span class="collection-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Толщина защитного слоя <svg><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></div><div class="decor-collection__size-item"><span class="collection-tooltip"><button class="btn__collection-tooltip btn-reset"><div class="decor-collection__size-num decor-collection__size-num--active">2,5</div></button> <span class="collection-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Толщина защитного слоя <svg><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></div></div></div><div class="collection-main__type-name">Свободнолежащий</div></div></div><div class="collection-main__advs"><h4 class="collection-main__subtitle">Преимущества коллекции</h4><div class="collection-main__adv-wrap"><div class="collection-main__adv"><div class="collection-main__svgs"><svg class="adv-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="adv-craft"><use xlink:href="img/sprite.svg#craft"></use></svg></div><p class="collection-main__adv-text">Доступен в формате Craft</p></div><div class="collection-main__adv"><div class="collection-main__svgs"><svg class="adv-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="adv-craft"><use xlink:href="img/sprite.svg#plintus"></use></svg></div><p class="collection-main__adv-text">Доступен в формате Craft</p></div><div class="collection-main__adv"><div class="collection-main__svgs"><svg class="adv-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="adv-craft"><use xlink:href="img/sprite.svg#plintus"></use></svg></div><p class="collection-main__adv-text">Доступен в формате Craft</p></div><div class="collection-main__adv"><div class="collection-main__svgs"><svg class="adv-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="adv-craft"><use xlink:href="img/sprite.svg#wood"></use></svg></div><p class="collection-main__adv-text">Доступен в формате Craft</p></div><div class="collection-main__adv"><div class="collection-main__svgs"><svg class="adv-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="adv-craft"><use xlink:href="img/sprite.svg#km2"></use></svg></div><p class="collection-main__adv-text">Доступен в формате Craft</p></div><div class="collection-main__adv"><div class="collection-main__svgs"><svg class="adv-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="adv-craft"><use xlink:href="img/sprite.svg#craft"></use></svg></div><p class="collection-main__adv-text">Доступен в формате Craft</p></div><div class="collection-main__adv"><div class="collection-main__svgs"><svg class="adv-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="adv-craft"><use xlink:href="img/sprite.svg#craft"></use></svg></div><p class="collection-main__adv-text">Доступен в формате Craft</p></div><div class="collection-main__adv"><div class="collection-main__svgs"><svg class="adv-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="adv-craft"><use xlink:href="img/sprite.svg#craft"></use></svg></div><p class="collection-main__adv-text">Доступен в формате Craft</p></div><div class="collection-main__adv"><div class="collection-main__svgs"><svg class="adv-ramka"><use xlink:href="img/sprite.svg#ramka"></use></svg> <svg class="adv-craft"><use xlink:href="img/sprite.svg#plintus"></use></svg></div><p class="collection-main__adv-text">Доступен в формате Craft</p></div></div></div></div></div></div></section><section class="collection-styling"><div class="collection-styling__container"><h3 class="collection__title collection__title--small">Возможные варианты укладки</h3><ul class="list-reset collection-styling__items"><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Вертикальная <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li><li class="collection-styling__item"><span class="styling-tooltip"><button class="btn__styling-tooltip btn-reset"><svg class="styling-svg"><use xlink:href="img/sprite.svg#type-1"></use></svg></button> <span class="styling-tooltip__txt" role="tooltip"><span class="visually-hidden">Тултип: </span>Французская ёлочка <svg class="q-tooltip--center"><use xlink:href="img/sprite.svg#triangle-down"></use></svg></span></span></li></ul></div></section><section class="collection-decors"><div class="collection-decors__container"><h3 class="collection__title collection__title--small">Декоры</h3><div class="collection-decors__wrap"><div class="tabs" data-tabs="decors"><ul class="tabs__nav"><li class="tabs__nav-item tabs__nav-item--active"><button class="btn-reset tabs__nav-btn" type="button">Клеевой тип укладки</button></li><li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Замковый тип укладки</button></li><li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Свободнолежащий</button></li></ul><div class="tabs__content"><div class="tabs__panel"><div class="collection-decors-type"><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-1.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Детройт</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-2.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-2.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Джакарта</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-3.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-3.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Бангалор</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-4.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-4.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Онтарио</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-5.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-5.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Дюранго</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-6.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-6.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Шато Де Брезе</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-7.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-7.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Шато Миранда</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-8.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-8.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Шато Де Фуа</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-9.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-9.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Шато Де Лош</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-10.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-10.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Кампс-Бей</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-11.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-11.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Кампс-Бей</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-12.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-12.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Кампс-Бей</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-13.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-13.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Банг-Тао</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-14.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-14.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Лаго-Верде</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-15.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-15.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Шато Де Анжони</div></div></div></div><div class="tabs__panel"><div class="collection-decors-type"><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-1.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Детройт</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-2.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-2.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Джакарта</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-3.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-3.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Бангалор</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-4.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-4.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Онтарио</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-5.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-5.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Дюранго</div></div></div></div><div class="tabs__panel"><div class="collection-decors-type"><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-1.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Детройт</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-2.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-2.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Джакарта</div></div><div class="collection-decors-type__item"><picture><source srcset="img/collection/decors/img-3.webp" type="image/webp"><img loading="lazy" src="img/collection/decors/img-3.jpg" class="image" width="276" height="48" alt="декор"></picture><div class="collection-decors-type__name">Бангалор</div></div></div></div></div></div></div></div></section><!-- collection table --><section class="collection-table"><div class="collection-table__container"><h3 class="collection__title collection__title--small collection__title--indent">Все декоры коллекции</h3><div class="t-collection__outer"><table class="table t-collection__inner"><thead><tr><th class="t-collection__header">Превью</th><th class="t-collection__header">Тип покрытия</th><th class="t-collection__header">Артикул</th><th class="t-collection__header t-collection__header--name">Наименование</th><th class="t-collection__header t-collection__header--price">Цена</th><th class="t-collection__header">Баллы</th><th class="t-collection__header">Упаковок</th><th class="t-collection__header">Действие</th></tr></thead><tbody><tr class="t-collection__row"><td class="t-collection__cell"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32" alt="Превью альтернативные предложения"></picture></td><td class="t-collection__cell">Замковый</td><td class="t-collection__cell">FF-1540</td><td class="t-collection__cell">Паркетная доска Manor House II RW04385A Дуб Дерби <span class="popup-preview js-popup-preview" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><article class="popup-preview__card"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image" width="120" height="120" alt="Предпоказ товара"></picture><div class="popup-preview__content"><h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3></div></article></span></td><td class="t-collection__cell">17 890 ₽</td><td class="t-collection__cell">41218</td><td class="t-collection__cell">11 434</td><td class="t-collection__cell"><div class="t-collection-menu"><span class="t-collection-menu__item"><button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню"><svg><use xlink:href="img/sprite.svg#points"></use></svg></button> <span class="popup-menu js-popup-menu" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></div><span class="popup-menu__title">Добавить в избранное</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#copy-link"></use></svg></div><span class="popup-menu__title">Скопировать ссылку</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#pdf"></use></svg></div><span class="popup-menu__title">Скачать PDF</span></a></div></span></span><div class="t-collection-menu__item"><button class="btn-reset btn__action"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></button></div><div class="t-collection-menu__item"><button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1"><svg><use xlink:href="img/sprite.svg#shopping-cart-add"></use></svg></button></div></div></td></tr><tr class="t-collection__row"><td class="t-collection__cell"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32" alt="Превью альтернативные предложения"></picture></td><td class="t-collection__cell">Замковый</td><td class="t-collection__cell">FF-1540</td><td class="t-collection__cell">Паркетная доска Manor House II RW04385A Дуб Дерби <span class="popup-preview js-popup-preview" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><article class="popup-preview__card"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image" width="120" height="120" alt="Предпоказ товара"></picture><div class="popup-preview__content"><h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3></div></article></span></td><td class="t-collection__cell">17 890 ₽</td><td class="t-collection__cell">41218</td><td class="t-collection__cell">11 434</td><td class="t-collection__cell"><div class="t-collection-menu"><span class="t-collection-menu__item"><button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню"><svg><use xlink:href="img/sprite.svg#points"></use></svg></button> <span class="popup-menu js-popup-menu" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></div><span class="popup-menu__title">Добавить в избранное</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#copy-link"></use></svg></div><span class="popup-menu__title">Скопировать ссылку</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#pdf"></use></svg></div><span class="popup-menu__title">Скачать PDF</span></a></div></span></span><div class="t-collection-menu__item"><button class="btn-reset btn__action"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></button></div><div class="t-collection-menu__item"><button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1"><svg><use xlink:href="img/sprite.svg#shopping-cart-add"></use></svg></button></div></div></td></tr><tr class="t-collection__row"><td class="t-collection__cell"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32" alt="Превью альтернативные предложения"></picture></td><td class="t-collection__cell">Замковый</td><td class="t-collection__cell">FF-1540</td><td class="t-collection__cell">Паркетная доска Manor House II RW04385A Дуб Дерби <span class="popup-preview js-popup-preview" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><article class="popup-preview__card"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image" width="120" height="120" alt="Предпоказ товара"></picture><div class="popup-preview__content"><h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3></div></article></span></td><td class="t-collection__cell">17 890 ₽</td><td class="t-collection__cell">41218</td><td class="t-collection__cell">11 434</td><td class="t-collection__cell"><div class="t-collection-menu"><span class="t-collection-menu__item"><button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню"><svg><use xlink:href="img/sprite.svg#points"></use></svg></button> <span class="popup-menu js-popup-menu" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></div><span class="popup-menu__title">Добавить в избранное</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#copy-link"></use></svg></div><span class="popup-menu__title">Скопировать ссылку</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#pdf"></use></svg></div><span class="popup-menu__title">Скачать PDF</span></a></div></span></span><div class="t-collection-menu__item"><button class="btn-reset btn__action"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></button></div><div class="t-collection-menu__item"><button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1"><svg><use xlink:href="img/sprite.svg#shopping-cart-add"></use></svg></button></div></div></td></tr><tr class="t-collection__row"><td class="t-collection__cell"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32" alt="Превью альтернативные предложения"></picture></td><td class="t-collection__cell">Замковый</td><td class="t-collection__cell">FF-1540</td><td class="t-collection__cell">Паркетная доска Manor House II RW04385A Дуб Дерби <span class="popup-preview js-popup-preview" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><article class="popup-preview__card"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image" width="120" height="120" alt="Предпоказ товара"></picture><div class="popup-preview__content"><h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3></div></article></span></td><td class="t-collection__cell">17 890 ₽</td><td class="t-collection__cell">41218</td><td class="t-collection__cell">11 434</td><td class="t-collection__cell"><div class="t-collection-menu"><span class="t-collection-menu__item"><button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню"><svg><use xlink:href="img/sprite.svg#points"></use></svg></button> <span class="popup-menu js-popup-menu" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></div><span class="popup-menu__title">Добавить в избранное</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#copy-link"></use></svg></div><span class="popup-menu__title">Скопировать ссылку</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#pdf"></use></svg></div><span class="popup-menu__title">Скачать PDF</span></a></div></span></span><div class="t-collection-menu__item"><button class="btn-reset btn__action"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></button></div><div class="t-collection-menu__item"><button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1"><svg><use xlink:href="img/sprite.svg#shopping-cart-add"></use></svg></button></div></div></td></tr><tr class="t-collection__row"><td class="t-collection__cell"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32" alt="Превью альтернативные предложения"></picture></td><td class="t-collection__cell">Замковый</td><td class="t-collection__cell">FF-1540</td><td class="t-collection__cell">Паркетная доска Manor House II RW04385A Дуб Дерби <span class="popup-preview js-popup-preview" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><article class="popup-preview__card"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image" width="120" height="120" alt="Предпоказ товара"></picture><div class="popup-preview__content"><h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3></div></article></span></td><td class="t-collection__cell">17 890 ₽</td><td class="t-collection__cell">41218</td><td class="t-collection__cell">11 434</td><td class="t-collection__cell"><div class="t-collection-menu"><span class="t-collection-menu__item"><button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню"><svg><use xlink:href="img/sprite.svg#points"></use></svg></button> <span class="popup-menu js-popup-menu" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></div><span class="popup-menu__title">Добавить в избранное</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#copy-link"></use></svg></div><span class="popup-menu__title">Скопировать ссылку</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#pdf"></use></svg></div><span class="popup-menu__title">Скачать PDF</span></a></div></span></span><div class="t-collection-menu__item"><button class="btn-reset btn__action"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></button></div><div class="t-collection-menu__item"><button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1"><svg><use xlink:href="img/sprite.svg#shopping-cart-add"></use></svg></button></div></div></td></tr><tr class="t-collection__row"><td class="t-collection__cell"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32" alt="Превью альтернативные предложения"></picture></td><td class="t-collection__cell">Замковый</td><td class="t-collection__cell">FF-1540</td><td class="t-collection__cell">Паркетная доска Manor House II RW04385A Дуб Дерби <span class="popup-preview js-popup-preview" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><article class="popup-preview__card"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image" width="120" height="120" alt="Предпоказ товара"></picture><div class="popup-preview__content"><h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3></div></article></span></td><td class="t-collection__cell">17 890 ₽</td><td class="t-collection__cell">41218</td><td class="t-collection__cell">11 434</td><td class="t-collection__cell"><div class="t-collection-menu"><span class="t-collection-menu__item"><button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню"><svg><use xlink:href="img/sprite.svg#points"></use></svg></button> <span class="popup-menu js-popup-menu" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></div><span class="popup-menu__title">Добавить в избранное</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#copy-link"></use></svg></div><span class="popup-menu__title">Скопировать ссылку</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#pdf"></use></svg></div><span class="popup-menu__title">Скачать PDF</span></a></div></span></span><div class="t-collection-menu__item"><button class="btn-reset btn__action"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></button></div><div class="t-collection-menu__item"><button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1"><svg><use xlink:href="img/sprite.svg#shopping-cart-add"></use></svg></button></div></div></td></tr><tr class="t-collection__row"><td class="t-collection__cell"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32" alt="Превью альтернативные предложения"></picture></td><td class="t-collection__cell">Замковый</td><td class="t-collection__cell">FF-1540</td><td class="t-collection__cell">Паркетная доска Manor House II RW04385A Дуб Дерби <span class="popup-preview js-popup-preview" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><article class="popup-preview__card"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image" width="120" height="120" alt="Предпоказ товара"></picture><div class="popup-preview__content"><h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3></div></article></span></td><td class="t-collection__cell">17 890 ₽</td><td class="t-collection__cell">41218</td><td class="t-collection__cell">11 434</td><td class="t-collection__cell"><div class="t-collection-menu"><span class="t-collection-menu__item"><button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню"><svg><use xlink:href="img/sprite.svg#points"></use></svg></button> <span class="popup-menu js-popup-menu" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></div><span class="popup-menu__title">Добавить в избранное</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#copy-link"></use></svg></div><span class="popup-menu__title">Скопировать ссылку</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#pdf"></use></svg></div><span class="popup-menu__title">Скачать PDF</span></a></div></span></span><div class="t-collection-menu__item"><button class="btn-reset btn__action"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></button></div><div class="t-collection-menu__item"><button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1"><svg><use xlink:href="img/sprite.svg#shopping-cart-add"></use></svg></button></div></div></td></tr><tr class="t-collection__row"><td class="t-collection__cell"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32" alt="Превью альтернативные предложения"></picture></td><td class="t-collection__cell">Замковый</td><td class="t-collection__cell">FF-1540</td><td class="t-collection__cell">Паркетная доска Manor House II RW04385A Дуб Дерби <span class="popup-preview js-popup-preview" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><article class="popup-preview__card"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image" width="120" height="120" alt="Предпоказ товара"></picture><div class="popup-preview__content"><h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3></div></article></span></td><td class="t-collection__cell">17 890 ₽</td><td class="t-collection__cell">41218</td><td class="t-collection__cell">11 434</td><td class="t-collection__cell"><div class="t-collection-menu"><span class="t-collection-menu__item"><button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню"><svg><use xlink:href="img/sprite.svg#points"></use></svg></button> <span class="popup-menu js-popup-menu" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></div><span class="popup-menu__title">Добавить в избранное</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#copy-link"></use></svg></div><span class="popup-menu__title">Скопировать ссылку</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#pdf"></use></svg></div><span class="popup-menu__title">Скачать PDF</span></a></div></span></span><div class="t-collection-menu__item"><button class="btn-reset btn__action"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></button></div><div class="t-collection-menu__item"><button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1"><svg><use xlink:href="img/sprite.svg#shopping-cart-add"></use></svg></button></div></div></td></tr><tr class="t-collection__row"><td class="t-collection__cell"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32" alt="Превью альтернативные предложения"></picture></td><td class="t-collection__cell">Замковый</td><td class="t-collection__cell">FF-1540</td><td class="t-collection__cell">Паркетная доска Manor House II RW04385A Дуб Дерби <span class="popup-preview js-popup-preview" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><article class="popup-preview__card"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image" width="120" height="120" alt="Предпоказ товара"></picture><div class="popup-preview__content"><h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3></div></article></span></td><td class="t-collection__cell">17 890 ₽</td><td class="t-collection__cell">41218</td><td class="t-collection__cell">11 434</td><td class="t-collection__cell"><div class="t-collection-menu"><span class="t-collection-menu__item"><button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню"><svg><use xlink:href="img/sprite.svg#points"></use></svg></button> <span class="popup-menu js-popup-menu" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></div><span class="popup-menu__title">Добавить в избранное</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#copy-link"></use></svg></div><span class="popup-menu__title">Скопировать ссылку</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#pdf"></use></svg></div><span class="popup-menu__title">Скачать PDF</span></a></div></span></span><div class="t-collection-menu__item"><button class="btn-reset btn__action"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></button></div><div class="t-collection-menu__item"><button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1"><svg><use xlink:href="img/sprite.svg#shopping-cart-add"></use></svg></button></div></div></td></tr><tr class="t-collection__row"><td class="t-collection__cell"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32" alt="Превью альтернативные предложения"></picture></td><td class="t-collection__cell">Замковый</td><td class="t-collection__cell">FF-1540</td><td class="t-collection__cell">Паркетная доска Manor House II RW04385A Дуб Дерби <span class="popup-preview js-popup-preview" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><article class="popup-preview__card"><picture><source srcset="img/collection/t-preview/img-1.webp" type="image/webp"><img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image" width="120" height="120" alt="Предпоказ товара"></picture><div class="popup-preview__content"><h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3></div></article></span></td><td class="t-collection__cell">17 890 ₽</td><td class="t-collection__cell">41218</td><td class="t-collection__cell">11 434</td><td class="t-collection__cell"><div class="t-collection-menu"><span class="t-collection-menu__item"><button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню"><svg><use xlink:href="img/sprite.svg#points"></use></svg></button> <span class="popup-menu js-popup-menu" role="tooltip"><span class="visually-hidden">Контекстное меню:</span><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></div><span class="popup-menu__title">Добавить в избранное</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#copy-link"></use></svg></div><span class="popup-menu__title">Скопировать ссылку</span></a></div><div class="popup-menu__item"><a href="#" class="popup-menu__link"><div class="popup-menu__icon"><svg><use xlink:href="img/sprite.svg#pdf"></use></svg></div><span class="popup-menu__title">Скачать PDF</span></a></div></span></span><div class="t-collection-menu__item"><button class="btn-reset btn__action"><svg><use xlink:href="img/sprite.svg#bookmark"></use></svg></button></div><div class="t-collection-menu__item"><button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1"><svg><use xlink:href="img/sprite.svg#shopping-cart-add"></use></svg></button></div></div></td></tr></tbody></table></div></div></section><!-- decor brand --><section class="decor-brand fixed-scroll" id="brand"><div class="decor-brand__container"><h3 class="decor__title decor__title--small">О бренде</h3><div class="decor-brand__content"><div class="decor-brand__image"><picture><source srcset="img/icvgroup.webp" type="image/webp"><img loading="lazy" src="img/icvgroup.png" class="image" width="141" height="56" alt="IVCGROUP"></picture></div><div class="decor-brand__descr"><p class="decor-brand__text">Коллекция FineFloor Wood — разнообразие тщательно отобранных и умело обработанных декоров благородного дуба и венге. Классика востребована всегда: покрытие идеально подходит для интерьеров квартир и загородных домов, а также для любых объектов коммерческой недвижимости.</p><a href="https://ivcgroup.com" class="decor-brand__link" target="_blank">ivcgroup.com</a> <a href="#" class="btn-reset btn__about-more">Подробнее о бренде</a></div></div></div></section></div></div></div><div class="graph-modal"><div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="product-1"><button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button><div class="graph-modal__content"><div class="popup__top"><div class="popup__item"><div class="popup__prices popup__prices--bottom"><div class="price price__item"><h4 class="popup__title">Дилерская цена за м²</h4><span class="popup__price price__dealer">1259.55</span><span class="popup__price"> ₽</span></div><div class="price price__item"><h4 class="popup__title">Розничная цена за м²</h4><span class="popup__price price__retail">1662.22</span><span class="popup__price"> ₽</span></div></div></div><div class="popup__item"><div class="popup__choose"><div class="popup__laying-type"><h4 class="popup__title">Тип укладки</h4><div class="prod-type"><div class="prod-type__item prod-type__item--active" data-laying-type="horizontal"><svg><use xlink:href="img/sprite.svg#type-horizontal"></use></svg></div><div class="prod-type__item" data-laying-type="diagonal"><svg><use xlink:href="img/sprite.svg#type-diagonal"></use></svg></div></div></div><div class="popup__right"><div class="popup__packages"><h4 class="popup__title">Площадь м²</h4><input type="number" id="inputArea" name="input-area" class="input-reset form__input popup__input" value="" placeholder="80"></div><button class="btn-reset btn btn__reflect"><svg><use xlink:href="img/sprite.svg#reflect"></use></svg></button><div class="popup__area"><h4 class="popup__title">Упаковок</h4><input type="number" id="inputPackage" name="input-package" class="input-reset form__input popup__input" value="" placeholder="27"></div></div></div></div><div class="popup__item"><div class="popup__prices"><div class="price price__item"><h4 class="popup__title">Сумма дилерская</h4><span class="popup__price amount__dealer">0.00</span><span class="popup__price"> ₽</span></div><div class="price price__item"><h4 class="popup__title">Сумма розничная</h4><span class="popup__price amount__retail">0.00</span><span class="popup__price"> ₽</span></div></div></div></div><div class="popup__bottom"><a href="#" class="btn-reset btn__cart-popup">Добавить в корзину</a> <a href="#" class="btn-reset btn__cart-popup">Быстро оформить заказ</a></div></div></div></div></main></div></body></html>
+          </picture> -->
+        </li>
+        <li class="menu__item menu__item--switch">
+          <label class="switch-theme">
+            <input type="checkbox" class="switch-theme__input">
+            <span class="switch-theme__slider"></span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <div class="collection">
+        <div class="container-fluid collection__container">
+          <!-- sidebar -->
+<div class="sidebar-wrapper" id="sidebarWrapper">
+  <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul class="sidebar-nav__list list-reset">
+        <li class="sidebar-nav__item">
+          <a href="https://alexshev7.github.io/personal-area/" class="sidebar-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#dashboard"></use>
+            </svg>
+            <span class="sidebar-nav__title">Главная</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#star-review"></use>
+            </svg>
+            <span class="sidebar-nav__title">Избранное</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="https://alexshev7.github.io/personal-area/" class="sidebar-nav__link sidebar-nav__link--active">
+            <svg>
+              <use xlink:href="img/sprite.svg#tree-view-alt"></use>
+            </svg>
+            <span class="sidebar-nav__title">Каталог</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#shopping-cart"></use>
+            </svg>
+            <span class="sidebar-nav__title">Заказы</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#chart-multitype"></use>
+            </svg>
+            <span class="sidebar-nav__title">Статистика</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#group-access"></use>
+            </svg>
+            <span class="sidebar-nav__title">Пользователи</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#share-knowledge"></use>
+            </svg>
+            <span class="sidebar-nav__title">Партнеры</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#roadmap"></use>
+            </svg>
+            <span class="sidebar-nav__title">Проекты</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#media-library"></use>
+            </svg>
+            <span class="sidebar-nav__title">Обучение</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#folder-open"></use>
+            </svg>
+            <span class="sidebar-nav__title">Материалы</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#ibm-cloud-pak-watson-aiops"></use>
+            </svg>
+            <span class="sidebar-nav__title">Техподдержка</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link sidebar-nav__link--expand">
+            <svg class="expand-svg">
+              <use xlink:href="img/sprite.svg#openside-bar"></use>
+            </svg>
+            <svg class="collapse-svg">
+              <use xlink:href="img/sprite.svg#open-panel-left"></use>
+            </svg>
+            <span class="sidebar-nav__title sidebar-nav__title--change">Развернуть меню</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar__bottom">
+      <a href="#" class="sidebar__link-app">
+        <svg>
+          <use xlink:href="img/sprite.svg#fine-app"></use>
+        </svg>
+      </a>
+      <p class="sidebar__descr">Разработка и техническая поддержка от компании ITeem. ©2023. По правам у нас
+        все ок.
+      </p>
+    </div>
+  </div>
+</div>
+          <div class="collection__flex">
+            <!-- breadcrumbs -->
+<nav class="breadcrumb-lk">
+  <ul class="list-reset breadcrumb-lk__list">
+    <li class="breadcrumb-lk__item">
+      <a href="https://alexshev7.github.io/personal-area/" class="breadcrumb-lk__link">Каталог</a>
+    </li>
+    <li class="breadcrumb-lk__item">
+      <a href="https://alexshev7.github.io/personal-area/brand.html" class="breadcrumb-lk__link">Бренд</a>
+    </li>
+    <li class="breadcrumb-lk__item">
+      <a href="https://alexshev7.github.io/personal-area/collection.html" class="breadcrumb-lk__link">Коллекция</a>
+    </li>
+    <li class="breadcrumb-lk__item">
+      <a href="https://alexshev7.github.io/personal-area/decor.html" class="breadcrumb-lk__link">Декор</a>
+    </li>
+    <li class="breadcrumb-lk__item breadcrumb-lk__item--active">Декор</li>
+  </ul>
+</nav>
+            <!-- collection main -->
+<section class="collection-main">
+  <div class="collection-main__container">
+    <div class="collection-main__top">
+      <div class="collection-main__logo">
+        <div class="collection-main__flag">
+          <picture>
+            <source srcset="img/flag.webp" type="image/webp">
+            <img loading="lazy" src="img/flag.png" class="image" width="28" height="20" alt="Флаг страны бренда">
+          </picture>
+        </div>
+        <div class="collection-main__brand">Fine Floor</div>
+      </div>
+      <div class="collection-main__row">
+        <h3 class="collection-main__title">Коллекция Wood</h3>
+        <div class="collection-main__inf-wrap">
+          <div class="collection-main__inf">
+            <div class="collection-main__inf-item">
+              <span class="collection-main__number">26</span><span class="collection-main__cur">декоров</span>
+            </div>
+          </div>
+          <div class="collection-main__inf">
+            <div class="collection-main__inf-item">
+              <span class="collection-main__number">87</span><span class="collection-main__cur">SKU</span>
+            </div>
+          </div>
+        </div>
+        <div class="collection-main__prices">
+          <p class="collection-main__price">от <span>5259</span> ₽ за м²</p>
+          <p class="collection-main__text">цена за упаковку: от <span>23 239</span> ₽</p>
+        </div>
+      </div>
+    </div>
+    <div class="collection-main__bottom">
+      <div class="collection-main__wrapper">
+        <div class="collection-main__funs">
+          <h5 class="collection-main__subtitle">Особенности коллекции</h5>
+          <div class="collection-main__fun">
+            <div class="collection-main__fun-wrap">
+              <div class="collection-main__type-wrap collection-main__type-item">
+                <div class="collection-main__type">
+                  <svg class="collection-ramka">
+                    <use xlink:href="img/sprite.svg#ramka"></use>
+                  </svg>
+                  <svg class="collection-craft">
+                    <use xlink:href="img/sprite.svg#zamkoviy"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="collection-main__drop collection-main__type-item">click<br> drop</div>
+              <div class="collection-main__size collection-main__type-item">
+                <div class="decor-collection__size-item">
+                  <span class="collection-tooltip">
+                    <button class="btn__collection-tooltip btn-reset">
+                      <div class="decor-collection__size-num">0,55</div>
+                    </button>
+                    <span class="collection-tooltip__txt" role="tooltip">
+                      <span class="visually-hidden">Тултип: </span>
+                      Толщина защитного слоя
+                      <svg>
+                        <use xlink:href="img/sprite.svg#triangle-down"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+                <div class="decor-collection__size-item">
+                  <span class="collection-tooltip">
+                    <button class="btn__collection-tooltip btn-reset">
+                      <div class="decor-collection__size-num decor-collection__size-num--active">4,5</div>
+                    </button>
+                    <span class="collection-tooltip__txt" role="tooltip">
+                      <span class="visually-hidden">Тултип: </span>
+                      Толщина защитного слоя
+                      <svg>
+                        <use xlink:href="img/sprite.svg#triangle-down"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="collection-main__type-name">Замковый</div>
+          </div>
+          <div class="collection-main__fun">
+            <div class="collection-main__fun-wrap">
+              <div class="collection-main__type-wrap collection-main__type-item">
+                <div class="collection-main__type">
+                  <svg class="collection-ramka">
+                    <use xlink:href="img/sprite.svg#ramka"></use>
+                  </svg>
+                  <svg class="collection-craft">
+                    <use xlink:href="img/sprite.svg#kleevoy"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="collection-main__size collection-main__type-item">
+                <div class="decor-collection__size-item">
+                  <span class="collection-tooltip">
+                    <button class="btn__collection-tooltip btn-reset">
+                      <div class="decor-collection__size-num">0,55</div>
+                    </button>
+                    <span class="collection-tooltip__txt" role="tooltip">
+                      <span class="visually-hidden">Тултип: </span>
+                      Толщина защитного слоя
+                      <svg>
+                        <use xlink:href="img/sprite.svg#triangle-down"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+                <div class="decor-collection__size-item">
+                  <span class="collection-tooltip">
+                    <button class="btn__collection-tooltip btn-reset">
+                      <div class="decor-collection__size-num decor-collection__size-num--active">2,5</div>
+                    </button>
+                    <span class="collection-tooltip__txt" role="tooltip">
+                      <span class="visually-hidden">Тултип: </span>
+                      Толщина защитного слоя
+                      <svg>
+                        <use xlink:href="img/sprite.svg#triangle-down"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="collection-main__type-name">Клеевой</div>
+          </div>
+          <div class="collection-main__fun">
+            <div class="collection-main__fun-wrap">
+              <div class="collection-main__type-wrap collection-main__type-item">
+                <div class="collection-main__type">
+                  <svg class="collection-ramka">
+                    <use xlink:href="img/sprite.svg#ramka"></use>
+                  </svg>
+                  <svg class="collection-craft">
+                    <use xlink:href="img/sprite.svg#free"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="collection-main__size collection-main__type-item">
+                <div class="decor-collection__size-item">
+                  <span class="collection-tooltip">
+                    <button class="btn__collection-tooltip btn-reset">
+                      <div class="decor-collection__size-num">0,55</div>
+                    </button>
+                    <span class="collection-tooltip__txt" role="tooltip">
+                      <span class="visually-hidden">Тултип: </span>
+                      Толщина защитного слоя
+                      <svg>
+                        <use xlink:href="img/sprite.svg#triangle-down"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+                <div class="decor-collection__size-item">
+                  <span class="collection-tooltip">
+                    <button class="btn__collection-tooltip btn-reset">
+                      <div class="decor-collection__size-num decor-collection__size-num--active">2,5</div>
+                    </button>
+                    <span class="collection-tooltip__txt" role="tooltip">
+                      <span class="visually-hidden">Тултип: </span>
+                      Толщина защитного слоя
+                      <svg>
+                        <use xlink:href="img/sprite.svg#triangle-down"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="collection-main__type-name">Свободнолежащий</div>
+          </div>
+        </div>
+        <div class="collection-main__advs">
+          <h4 class="collection-main__subtitle">Преимущества коллекции</h4>
+          <div class="collection-main__adv-wrap">
+
+            <div class="collection-main__adv">
+              <div class="collection-main__svgs">
+                <svg class="adv-ramka">
+                  <use xlink:href="img/sprite.svg#ramka"></use>
+                </svg>
+                <svg class="adv-craft">
+                  <use xlink:href="img/sprite.svg#craft"></use>
+                </svg>
+              </div>
+              <p class="collection-main__adv-text">Доступен в формате Craft</p>
+            </div>
+
+            <div class="collection-main__adv">
+              <div class="collection-main__svgs">
+                <svg class="adv-ramka">
+                  <use xlink:href="img/sprite.svg#ramka"></use>
+                </svg>
+                <svg class="adv-craft">
+                  <use xlink:href="img/sprite.svg#plintus"></use>
+                </svg>
+              </div>
+              <p class="collection-main__adv-text">Доступен в формате Craft</p>
+            </div>
+
+            <div class="collection-main__adv">
+              <div class="collection-main__svgs">
+                <svg class="adv-ramka">
+                  <use xlink:href="img/sprite.svg#ramka"></use>
+                </svg>
+                <svg class="adv-craft">
+                  <use xlink:href="img/sprite.svg#plintus"></use>
+                </svg>
+              </div>
+              <p class="collection-main__adv-text">Доступен в формате Craft</p>
+            </div>
+
+            <div class="collection-main__adv">
+              <div class="collection-main__svgs">
+                <svg class="adv-ramka">
+                  <use xlink:href="img/sprite.svg#ramka"></use>
+                </svg>
+                <svg class="adv-craft">
+                  <use xlink:href="img/sprite.svg#wood"></use>
+                </svg>
+              </div>
+              <p class="collection-main__adv-text">Доступен в формате Craft</p>
+            </div>
+
+            <div class="collection-main__adv">
+              <div class="collection-main__svgs">
+                <svg class="adv-ramka">
+                  <use xlink:href="img/sprite.svg#ramka"></use>
+                </svg>
+                <svg class="adv-craft">
+                  <use xlink:href="img/sprite.svg#km2"></use>
+                </svg>
+              </div>
+              <p class="collection-main__adv-text">Доступен в формате Craft</p>
+            </div>
+
+            <div class="collection-main__adv">
+              <div class="collection-main__svgs">
+                <svg class="adv-ramka">
+                  <use xlink:href="img/sprite.svg#ramka"></use>
+                </svg>
+                <svg class="adv-craft">
+                  <use xlink:href="img/sprite.svg#craft"></use>
+                </svg>
+              </div>
+              <p class="collection-main__adv-text">Доступен в формате Craft</p>
+            </div>
+
+            <div class="collection-main__adv">
+              <div class="collection-main__svgs">
+                <svg class="adv-ramka">
+                  <use xlink:href="img/sprite.svg#ramka"></use>
+                </svg>
+                <svg class="adv-craft">
+                  <use xlink:href="img/sprite.svg#craft"></use>
+                </svg>
+              </div>
+              <p class="collection-main__adv-text">Доступен в формате Craft</p>
+            </div>
+
+            <div class="collection-main__adv">
+              <div class="collection-main__svgs">
+                <svg class="adv-ramka">
+                  <use xlink:href="img/sprite.svg#ramka"></use>
+                </svg>
+                <svg class="adv-craft">
+                  <use xlink:href="img/sprite.svg#craft"></use>
+                </svg>
+              </div>
+              <p class="collection-main__adv-text">Доступен в формате Craft</p>
+            </div>
+
+            <div class="collection-main__adv">
+              <div class="collection-main__svgs">
+                <svg class="adv-ramka">
+                  <use xlink:href="img/sprite.svg#ramka"></use>
+                </svg>
+                <svg class="adv-craft">
+                  <use xlink:href="img/sprite.svg#plintus"></use>
+                </svg>
+              </div>
+              <p class="collection-main__adv-text">Доступен в формате Craft</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+            <section class="collection-styling">
+  <div class="collection-styling__container">
+    <h3 class="collection__title collection__title--small">Возможные варианты укладки</h3>
+    <ul class="list-reset collection-styling__items">
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Вертикальная
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+      <li class="collection-styling__item">
+        <span class="styling-tooltip">
+          <button class="btn__styling-tooltip btn-reset">
+            <svg class="styling-svg">
+              <use xlink:href="img/sprite.svg#type-1"></use>
+            </svg>
+          </button>
+          <span class="styling-tooltip__txt" role="tooltip">
+            <span class="visually-hidden">Тултип: </span>
+            Французская ёлочка
+            <svg class="q-tooltip--center">
+              <use xlink:href="img/sprite.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </span>
+      </li>
+    </ul>
+  </div>
+</section>
+            <section class="collection-decors">
+  <div class="collection-decors__container">
+    <h3 class="collection__title collection__title--small">Декоры</h3>
+    <div class="collection-decors__wrap">
+      <div class="tabs" data-tabs="decors">
+        <ul class="tabs__nav">
+          <li class="tabs__nav-item tabs__nav-item--active"><button class="btn-reset tabs__nav-btn"
+              type="button">Клеевой
+              тип укладки</button>
+          </li>
+          <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Замковый тип укладки</button>
+          </li>
+          <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Свободнолежащий</button></li>
+        </ul>
+        <div class="tabs__content">
+          <div class="tabs__panel">
+            <div class="collection-decors-type">
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-1.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-1.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Детройт</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-2.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-2.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Джакарта</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-3.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-3.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Бангалор</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-4.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-4.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Онтарио</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-5.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-5.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Дюранго</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-6.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-6.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Шато Де Брезе</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-7.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-7.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Шато Миранда</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-8.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-8.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Шато Де Фуа</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-9.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-9.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Шато Де Лош</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-10.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-10.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Кампс-Бей</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-11.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-11.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Кампс-Бей</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-12.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-12.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Кампс-Бей</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-13.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-13.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Банг-Тао</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-14.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-14.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Лаго-Верде</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-15.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-15.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Шато Де Анжони</div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__panel">
+            <div class="collection-decors-type">
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-1.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-1.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Детройт</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-2.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-2.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Джакарта</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-3.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-3.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Бангалор</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-4.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-4.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Онтарио</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-5.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-5.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Дюранго</div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__panel">
+            <div class="collection-decors-type">
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-1.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-1.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Детройт</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-2.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-2.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Джакарта</div>
+              </div>
+              <div class="collection-decors-type__item">
+                <picture>
+                  <source srcset="img/collection/decors/img-3.webp" type="image/webp">
+                  <img loading="lazy" src="img/collection/decors/img-3.jpg" class="image" width="276" height="48"
+                    alt="декор">
+                </picture>
+                <div class="collection-decors-type__name">Бангалор</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+            <!-- collection table -->
+<section class="collection-table">
+  <div class="collection-table__container">
+    <h3 class="collection__title collection__title--small collection__title--indent">Все декоры коллекции</h3>
+    <div class="t-collection__outer">
+      <table class="table t-collection__inner">
+        <thead>
+          <tr>
+            <th class="t-collection__header">Превью</th>
+            <th class="t-collection__header">Тип покрытия</th>
+            <th class="t-collection__header">Артикул</th>
+            <th class="t-collection__header t-collection__header--name">Наименование</th>
+            <th class="t-collection__header t-collection__header--price">Цена</th>
+            <th class="t-collection__header">Баллы</th>
+            <th class="t-collection__header">Упаковок</th>
+            <th class="t-collection__header">Действие</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="t-collection__row">
+            <td class="t-collection__cell">
+              <picture>
+                <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32"
+                  alt="Превью альтернативные предложения">
+              </picture>
+            </td>
+            <td class="t-collection__cell">Замковый</td>
+            <td class="t-collection__cell">FF-1540</td>
+            <td class="t-collection__cell">
+              Паркетная доска Manor House II RW04385A Дуб Дерби
+              <span class="popup-preview js-popup-preview" role="tooltip">
+                <span class="visually-hidden">Контекстное меню: </span>
+                <article class="popup-preview__card">
+                  <picture>
+                    <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image"
+                      width="120" height="120" alt="Предпоказ товара">
+                  </picture>
+                  <div class="popup-preview__content">
+                    <h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3>
+                  </div>
+                </article>
+              </span>
+            </td>
+            <td class="t-collection__cell">17 890 ₽</td>
+            <td class="t-collection__cell">41218</td>
+            <td class="t-collection__cell">11 434</td>
+            <td class="t-collection__cell">
+              <div class="t-collection-menu">
+                <span class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#points"></use>
+                    </svg>
+                  </button>
+                  <span class="popup-menu js-popup-menu" role="tooltip">
+                    <span class="visually-hidden">Контекстное меню: </span>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Добавить в избранное</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#copy-link"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скопировать ссылку</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#pdf"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скачать PDF</span>
+                      </a>
+                    </div>
+                  </span>
+                </span>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#bookmark"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shopping-cart-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="t-collection__row">
+            <td class="t-collection__cell">
+              <picture>
+                <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32"
+                  alt="Превью альтернативные предложения">
+              </picture>
+            </td>
+            <td class="t-collection__cell">Замковый</td>
+            <td class="t-collection__cell">FF-1540</td>
+            <td class="t-collection__cell">
+              Паркетная доска Manor House II RW04385A Дуб Дерби
+              <span class="popup-preview js-popup-preview" role="tooltip">
+                <span class="visually-hidden">Контекстное меню: </span>
+                <article class="popup-preview__card">
+                  <picture>
+                    <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image"
+                      width="120" height="120" alt="Предпоказ товара">
+                  </picture>
+                  <div class="popup-preview__content">
+                    <h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3>
+                  </div>
+                </article>
+              </span>
+            </td>
+            <td class="t-collection__cell">17 890 ₽</td>
+            <td class="t-collection__cell">41218</td>
+            <td class="t-collection__cell">11 434</td>
+            <td class="t-collection__cell">
+              <div class="t-collection-menu">
+                <span class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#points"></use>
+                    </svg>
+                  </button>
+                  <span class="popup-menu js-popup-menu" role="tooltip">
+                    <span class="visually-hidden">Контекстное меню: </span>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Добавить в избранное</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#copy-link"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скопировать ссылку</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#pdf"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скачать PDF</span>
+                      </a>
+                    </div>
+                  </span>
+                </span>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#bookmark"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shopping-cart-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="t-collection__row">
+            <td class="t-collection__cell">
+              <picture>
+                <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32"
+                  alt="Превью альтернативные предложения">
+              </picture>
+            </td>
+            <td class="t-collection__cell">Замковый</td>
+            <td class="t-collection__cell">FF-1540</td>
+            <td class="t-collection__cell">
+              Паркетная доска Manor House II RW04385A Дуб Дерби
+              <span class="popup-preview js-popup-preview" role="tooltip">
+                <span class="visually-hidden">Контекстное меню: </span>
+                <article class="popup-preview__card">
+                  <picture>
+                    <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image"
+                      width="120" height="120" alt="Предпоказ товара">
+                  </picture>
+                  <div class="popup-preview__content">
+                    <h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3>
+                  </div>
+                </article>
+              </span>
+            </td>
+            <td class="t-collection__cell">17 890 ₽</td>
+            <td class="t-collection__cell">41218</td>
+            <td class="t-collection__cell">11 434</td>
+            <td class="t-collection__cell">
+              <div class="t-collection-menu">
+                <span class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#points"></use>
+                    </svg>
+                  </button>
+                  <span class="popup-menu js-popup-menu" role="tooltip">
+                    <span class="visually-hidden">Контекстное меню: </span>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Добавить в избранное</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#copy-link"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скопировать ссылку</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#pdf"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скачать PDF</span>
+                      </a>
+                    </div>
+                  </span>
+                </span>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#bookmark"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shopping-cart-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="t-collection__row">
+            <td class="t-collection__cell">
+              <picture>
+                <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32"
+                  alt="Превью альтернативные предложения">
+              </picture>
+            </td>
+            <td class="t-collection__cell">Замковый</td>
+            <td class="t-collection__cell">FF-1540</td>
+            <td class="t-collection__cell">
+              Паркетная доска Manor House II RW04385A Дуб Дерби
+              <span class="popup-preview js-popup-preview" role="tooltip">
+                <span class="visually-hidden">Контекстное меню: </span>
+                <article class="popup-preview__card">
+                  <picture>
+                    <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image"
+                      width="120" height="120" alt="Предпоказ товара">
+                  </picture>
+                  <div class="popup-preview__content">
+                    <h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3>
+                  </div>
+                </article>
+              </span>
+            </td>
+            <td class="t-collection__cell">17 890 ₽</td>
+            <td class="t-collection__cell">41218</td>
+            <td class="t-collection__cell">11 434</td>
+            <td class="t-collection__cell">
+              <div class="t-collection-menu">
+                <span class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#points"></use>
+                    </svg>
+                  </button>
+                  <span class="popup-menu js-popup-menu" role="tooltip">
+                    <span class="visually-hidden">Контекстное меню: </span>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Добавить в избранное</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#copy-link"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скопировать ссылку</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#pdf"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скачать PDF</span>
+                      </a>
+                    </div>
+                  </span>
+                </span>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#bookmark"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shopping-cart-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="t-collection__row">
+            <td class="t-collection__cell">
+              <picture>
+                <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32"
+                  alt="Превью альтернативные предложения">
+              </picture>
+            </td>
+            <td class="t-collection__cell">Замковый</td>
+            <td class="t-collection__cell">FF-1540</td>
+            <td class="t-collection__cell">
+              Паркетная доска Manor House II RW04385A Дуб Дерби
+              <span class="popup-preview js-popup-preview" role="tooltip">
+                <span class="visually-hidden">Контекстное меню: </span>
+                <article class="popup-preview__card">
+                  <picture>
+                    <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image"
+                      width="120" height="120" alt="Предпоказ товара">
+                  </picture>
+                  <div class="popup-preview__content">
+                    <h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3>
+                  </div>
+                </article>
+              </span>
+            </td>
+            <td class="t-collection__cell">17 890 ₽</td>
+            <td class="t-collection__cell">41218</td>
+            <td class="t-collection__cell">11 434</td>
+            <td class="t-collection__cell">
+              <div class="t-collection-menu">
+                <span class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#points"></use>
+                    </svg>
+                  </button>
+                  <span class="popup-menu js-popup-menu" role="tooltip">
+                    <span class="visually-hidden">Контекстное меню: </span>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Добавить в избранное</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#copy-link"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скопировать ссылку</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#pdf"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скачать PDF</span>
+                      </a>
+                    </div>
+                  </span>
+                </span>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#bookmark"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shopping-cart-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="t-collection__row">
+            <td class="t-collection__cell">
+              <picture>
+                <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32"
+                  alt="Превью альтернативные предложения">
+              </picture>
+            </td>
+            <td class="t-collection__cell">Замковый</td>
+            <td class="t-collection__cell">FF-1540</td>
+            <td class="t-collection__cell">
+              Паркетная доска Manor House II RW04385A Дуб Дерби
+              <span class="popup-preview js-popup-preview" role="tooltip">
+                <span class="visually-hidden">Контекстное меню: </span>
+                <article class="popup-preview__card">
+                  <picture>
+                    <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image"
+                      width="120" height="120" alt="Предпоказ товара">
+                  </picture>
+                  <div class="popup-preview__content">
+                    <h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3>
+                  </div>
+                </article>
+              </span>
+            </td>
+            <td class="t-collection__cell">17 890 ₽</td>
+            <td class="t-collection__cell">41218</td>
+            <td class="t-collection__cell">11 434</td>
+            <td class="t-collection__cell">
+              <div class="t-collection-menu">
+                <span class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#points"></use>
+                    </svg>
+                  </button>
+                  <span class="popup-menu js-popup-menu" role="tooltip">
+                    <span class="visually-hidden">Контекстное меню: </span>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Добавить в избранное</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#copy-link"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скопировать ссылку</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#pdf"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скачать PDF</span>
+                      </a>
+                    </div>
+                  </span>
+                </span>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#bookmark"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shopping-cart-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="t-collection__row">
+            <td class="t-collection__cell">
+              <picture>
+                <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32"
+                  alt="Превью альтернативные предложения">
+              </picture>
+            </td>
+            <td class="t-collection__cell">Замковый</td>
+            <td class="t-collection__cell">FF-1540</td>
+            <td class="t-collection__cell">
+              Паркетная доска Manor House II RW04385A Дуб Дерби
+              <span class="popup-preview js-popup-preview" role="tooltip">
+                <span class="visually-hidden">Контекстное меню: </span>
+                <article class="popup-preview__card">
+                  <picture>
+                    <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image"
+                      width="120" height="120" alt="Предпоказ товара">
+                  </picture>
+                  <div class="popup-preview__content">
+                    <h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3>
+                  </div>
+                </article>
+              </span>
+            </td>
+            <td class="t-collection__cell">17 890 ₽</td>
+            <td class="t-collection__cell">41218</td>
+            <td class="t-collection__cell">11 434</td>
+            <td class="t-collection__cell">
+              <div class="t-collection-menu">
+                <span class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#points"></use>
+                    </svg>
+                  </button>
+                  <span class="popup-menu js-popup-menu" role="tooltip">
+                    <span class="visually-hidden">Контекстное меню: </span>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Добавить в избранное</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#copy-link"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скопировать ссылку</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#pdf"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скачать PDF</span>
+                      </a>
+                    </div>
+                  </span>
+                </span>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#bookmark"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shopping-cart-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="t-collection__row">
+            <td class="t-collection__cell">
+              <picture>
+                <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32"
+                  alt="Превью альтернативные предложения">
+              </picture>
+            </td>
+            <td class="t-collection__cell">Замковый</td>
+            <td class="t-collection__cell">FF-1540</td>
+            <td class="t-collection__cell">
+              Паркетная доска Manor House II RW04385A Дуб Дерби
+              <span class="popup-preview js-popup-preview" role="tooltip">
+                <span class="visually-hidden">Контекстное меню: </span>
+                <article class="popup-preview__card">
+                  <picture>
+                    <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image"
+                      width="120" height="120" alt="Предпоказ товара">
+                  </picture>
+                  <div class="popup-preview__content">
+                    <h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3>
+                  </div>
+                </article>
+              </span>
+            </td>
+            <td class="t-collection__cell">17 890 ₽</td>
+            <td class="t-collection__cell">41218</td>
+            <td class="t-collection__cell">11 434</td>
+            <td class="t-collection__cell">
+              <div class="t-collection-menu">
+                <span class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#points"></use>
+                    </svg>
+                  </button>
+                  <span class="popup-menu js-popup-menu" role="tooltip">
+                    <span class="visually-hidden">Контекстное меню: </span>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Добавить в избранное</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#copy-link"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скопировать ссылку</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#pdf"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скачать PDF</span>
+                      </a>
+                    </div>
+                  </span>
+                </span>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#bookmark"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shopping-cart-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="t-collection__row">
+            <td class="t-collection__cell">
+              <picture>
+                <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32"
+                  alt="Превью альтернативные предложения">
+              </picture>
+            </td>
+            <td class="t-collection__cell">Замковый</td>
+            <td class="t-collection__cell">FF-1540</td>
+            <td class="t-collection__cell">
+              Паркетная доска Manor House II RW04385A Дуб Дерби
+              <span class="popup-preview js-popup-preview" role="tooltip">
+                <span class="visually-hidden">Контекстное меню: </span>
+                <article class="popup-preview__card">
+                  <picture>
+                    <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image"
+                      width="120" height="120" alt="Предпоказ товара">
+                  </picture>
+                  <div class="popup-preview__content">
+                    <h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3>
+                  </div>
+                </article>
+              </span>
+            </td>
+            <td class="t-collection__cell">17 890 ₽</td>
+            <td class="t-collection__cell">41218</td>
+            <td class="t-collection__cell">11 434</td>
+            <td class="t-collection__cell">
+              <div class="t-collection-menu">
+                <span class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#points"></use>
+                    </svg>
+                  </button>
+                  <span class="popup-menu js-popup-menu" role="tooltip">
+                    <span class="visually-hidden">Контекстное меню: </span>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Добавить в избранное</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#copy-link"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скопировать ссылку</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#pdf"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скачать PDF</span>
+                      </a>
+                    </div>
+                  </span>
+                </span>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#bookmark"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shopping-cart-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="t-collection__row">
+            <td class="t-collection__cell">
+              <picture>
+                <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="image" width="32" height="32"
+                  alt="Превью альтернативные предложения">
+              </picture>
+            </td>
+            <td class="t-collection__cell">Замковый</td>
+            <td class="t-collection__cell">FF-1540</td>
+            <td class="t-collection__cell">
+              Паркетная доска Manor House II RW04385A Дуб Дерби
+              <span class="popup-preview js-popup-preview" role="tooltip">
+                <span class="visually-hidden">Контекстное меню: </span>
+                <article class="popup-preview__card">
+                  <picture>
+                    <source srcset="img/collection/t-preview/img-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/collection/t-preview/img-1.jpg" class="popup-preview__image"
+                      width="120" height="120" alt="Предпоказ товара">
+                  </picture>
+                  <div class="popup-preview__content">
+                    <h3 class="popup-preview__title">FF-1321 Дуб Меранти</h3>
+                  </div>
+                </article>
+              </span>
+            </td>
+            <td class="t-collection__cell">17 890 ₽</td>
+            <td class="t-collection__cell">41218</td>
+            <td class="t-collection__cell">11 434</td>
+            <td class="t-collection__cell">
+              <div class="t-collection-menu">
+                <span class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__menu-popup" aria-label="Открыть контекстное меню">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#points"></use>
+                    </svg>
+                  </button>
+                  <span class="popup-menu js-popup-menu" role="tooltip">
+                    <span class="visually-hidden">Контекстное меню: </span>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Добавить в избранное</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#copy-link"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скопировать ссылку</span>
+                      </a>
+                    </div>
+                    <div class="popup-menu__item">
+                      <a href="#" class="popup-menu__link">
+                        <div class="popup-menu__icon">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#pdf"></use>
+                          </svg>
+                        </div>
+                        <span class="popup-menu__title">Скачать PDF</span>
+                      </a>
+                    </div>
+                  </span>
+                </span>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#bookmark"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="t-collection-menu__item">
+                  <button class="btn-reset btn__action btn__add-to-cart" data-graph-path="product-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shopping-cart-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+            <!-- decor brand -->
+<section class="decor-brand fixed-scroll" id="brand">
+  <div class="decor-brand__container">
+    <h3 class="decor__title decor__title--small">О бренде</h3>
+    <div class="decor-brand__content">
+      <div class="decor-brand__image">
+        <picture>
+          <source srcset="img/icvgroup.webp" type="image/webp">
+          <img loading="lazy" src="img/icvgroup.png" class="image" width="141" height="56" alt="IVCGROUP">
+        </picture>
+      </div>
+      <div class="decor-brand__descr">
+        <p class="decor-brand__text">Коллекция FineFloor Wood — разнообразие тщательно отобранных и умело
+          обработанных декоров благородного дуба и венге. Классика востребована всегда: покрытие идеально
+          подходит
+          для интерьеров квартир и загородных домов, а также для любых объектов коммерческой недвижимости.
+        </p>
+        <a href="https://ivcgroup.com" class="decor-brand__link" target="_blank">ivcgroup.com</a>
+        <a href="#" class="btn-reset btn__about-more">Подробнее о бренде</a>
+      </div>
+    </div>
+  </div>
+</section>
+          </div>
+        </div>
+      </div>
+      <div class="graph-modal">
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="product-1">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+        <div class="popup__item">
+          <div class="popup__prices popup__prices--bottom">
+            <div class="price price__item">
+              <h4 class="popup__title">Дилерская цена за м²</h4>
+              <span class="popup__price price__dealer">1259.55</span><span class="popup__price"> ₽</span>
+            </div>
+            <div class="price price__item">
+              <h4 class="popup__title">Розничная цена за м²</h4>
+              <span class="popup__price price__retail">1662.22</span><span class="popup__price"> ₽</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item">
+          <div class="popup__choose">
+            <div class="popup__laying-type">
+              <h4 class="popup__title">Тип укладки</h4>
+              <div class="prod-type">
+                <div class="prod-type__item prod-type__item--active" data-laying-type="horizontal">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#type-horizontal"></use>
+                  </svg>
+                </div>
+                <div class="prod-type__item" data-laying-type="diagonal">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#type-diagonal"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="popup__right">
+              <div class="popup__packages">
+                <h4 class="popup__title">Площадь м²</h4>
+                <input type="number" id="inputArea" name="input-area" class="input-reset form__input popup__input"
+                  value="" placeholder="80">
+              </div>
+              <button class="btn-reset btn btn__reflect">
+                <svg>
+                  <use xlink:href="img/sprite.svg#reflect"></use>
+                </svg>
+              </button>
+              <div class="popup__area">
+                <h4 class="popup__title">Упаковок</h4>
+                <input type="number" id="inputPackage" name="input-package" class="input-reset form__input popup__input"
+                  value="" placeholder="27">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item">
+          <div class="popup__prices">
+            <div class="price price__item">
+              <h4 class="popup__title">Сумма дилерская</h4>
+              <span class="popup__price amount__dealer">0.00</span><span class="popup__price"> ₽</span>
+            </div>
+            <div class="price price__item">
+              <h4 class="popup__title">Сумма розничная</h4>
+              <span class="popup__price amount__retail">0.00</span><span class="popup__price"> ₽</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup__bottom">
+        <a href="#" class="btn-reset btn__cart-popup">Добавить в корзину</a>
+        <a href="#" class="btn-reset btn__cart-popup">Быстро оформить заказ</a>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+  </div>
+
+</body>
+
+</html>
