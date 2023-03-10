@@ -1,0 +1,91 @@
+/*!
+ * Sizzle CSS Selector Engine v2.3.9
+ * https://sizzlejs.com/
+ *
+ * Copyright JS Foundation and other contributors
+ * Released under the MIT license
+ * https://js.foundation/
+ *
+ * Date: 2022-12-19
+ */
+
+/*!
+ * jQuery JavaScript Library v3.6.3
+ * https://jquery.com/
+ *
+ * Includes Sizzle.js
+ * https://sizzlejs.com/
+ *
+ * Copyright OpenJS Foundation and other contributors
+ * Released under the MIT license
+ * https://jquery.org/license
+ *
+ * Date: 2022-12-20T21:28Z
+ */
+
+/*!
+ * jQuery UI Position 1.13.2
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/position/
+ */
+
+/*!
+ * jQuery UI Support for jQuery core 1.8.x and newer 1.13.2
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ */
+
+/*!
+ * jQuery UI Widget 1.13.2
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jquery.fancytree.filter.js
+ *
+ * Remove or highlight tree nodes, based on a filter.
+ * (Extension module for jquery.fancytree.js: https://github.com/mar10/fancytree/)
+ *
+ * Copyright (c) 2008-2023, Martin Wendt (https://wwWendt.de)
+ *
+ * Released under the MIT license
+ * https://github.com/mar10/fancytree/wiki/LicenseInfo
+ *
+ * @version 2.38.3
+ * @date 2023-02-01T20:52:50Z
+ */
+
+/*!
+ * jquery.fancytree.js
+ * Tree view control with support for lazy loading and much more.
+ * https://github.com/mar10/fancytree/
+ *
+ * Copyright (c) 2008-2023, Martin Wendt (https://wwWendt.de)
+ * Released under the MIT license
+ * https://github.com/mar10/fancytree/wiki/LicenseInfo
+ *
+ * @version 2.38.3
+ * @date 2023-02-01T20:52:50Z
+ */
+
+/*! DataTables 1.13.2
+ * ©2008-2023 SpryMedia Ltd - datatables.net/license
+ */
+
+/*! jQuery UI - v1.13.2 - 2022-08-16
+* http://jqueryui.com
+* Includes: widget.js, position.js, jquery-patch.js, keycode.js, scroll-parent.js, unique-id.js
+* Copyright jQuery Foundation and other contributors; Licensed MIT */
