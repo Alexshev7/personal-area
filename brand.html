@@ -92,16 +92,16 @@
           </span>
         </li>
         <li class="menu__item menu__item--user">
-          <!-- <div class="user__icon">
-              <svg>
-                <use xlink:href="img/sprite.svg#user"></use>
-              </svg>
-            </div> -->
-          <picture>
+          <div class="user__icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+          </div>
+          <!-- <picture>
             <source srcset="img/user-avatar.webp" type="image/webp">
             <img loading="lazy" src="img/user-avatar.png" class="user__image" width="96" height="96"
               alt="Пользовательский аватар">
-          </picture>
+          </picture> -->
         </li>
         <li class="menu__item menu__item--switch">
           <label class="switch-theme">
@@ -1675,6 +1675,79 @@
           </div>
         </div>
       </div>
+      <div class="graph-modal">
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="product-1">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+        <div class="popup__item">
+          <div class="popup__prices popup__prices--bottom">
+            <div class="price price__item">
+              <h4 class="popup__title">Дилерская цена за м²</h4>
+              <span class="popup__price price__dealer">1259.55</span><span class="popup__price"> ₽</span>
+            </div>
+            <div class="price price__item">
+              <h4 class="popup__title">Розничная цена за м²</h4>
+              <span class="popup__price price__retail">1662.22</span><span class="popup__price"> ₽</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item">
+          <div class="popup__choose">
+            <div class="popup__laying-type">
+              <h4 class="popup__title">Тип укладки</h4>
+              <div class="prod-type">
+                <div class="prod-type__item prod-type__item--active" data-laying-type="horizontal">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#type-horizontal"></use>
+                  </svg>
+                </div>
+                <div class="prod-type__item" data-laying-type="diagonal">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#type-diagonal"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="popup__right">
+              <div class="popup__packages">
+                <h4 class="popup__title">Площадь м²</h4>
+                <input type="number" id="inputArea" name="input-area" class="input-reset form__input popup__input"
+                  value="" placeholder="80">
+              </div>
+              <button class="btn-reset btn btn__reflect">
+                <svg>
+                  <use xlink:href="img/sprite.svg#reflect"></use>
+                </svg>
+              </button>
+              <div class="popup__area">
+                <h4 class="popup__title">Упаковок</h4>
+                <input type="number" id="inputPackage" name="input-package" class="input-reset form__input popup__input"
+                  value="" placeholder="27">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item">
+          <div class="popup__prices">
+            <div class="price price__item">
+              <h4 class="popup__title">Сумма дилерская</h4>
+              <span class="popup__price amount__dealer">0.00</span><span class="popup__price"> ₽</span>
+            </div>
+            <div class="price price__item">
+              <h4 class="popup__title">Сумма розничная</h4>
+              <span class="popup__price amount__retail">0.00</span><span class="popup__price"> ₽</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup__bottom">
+        <a href="#" class="btn-reset btn__cart-popup">Добавить в корзину</a>
+        <a href="#" class="btn-reset btn__cart-popup">Быстро оформить заказ</a>
+      </div>
+    </div>
+  </div>
+</div>
     </main>
   </div>
 
